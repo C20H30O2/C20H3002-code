@@ -1,0 +1,13 @@
+1.创建爬虫的项目 scrapy startproject 项目名称（不能数字开头，不能包含中文）
+2.创建爬虫文件 要在spiders中创建爬虫文件 在cmd中输入指令创建
+    cd scrapy_baidu_test\scrapy_baidu_test\spiders
+    cd 项目名字\项目名字\spiders
+
+    创建爬虫文件
+    scrapy genspider 爬虫文件名字 要爬取的网页
+    例如：scrapy genspider baidu http://www.baidu.com
+    但是一般情况下不需要加http协议  因为start_url是在allowed_domains基础上变化的
+    直接写www.baidu.com就行 写了也会被识别然后自动删除
+3.运行爬虫代码
+     在cmd输入 scrapy crawl 爬虫的名字
+
